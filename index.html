@@ -6,23 +6,22 @@
     <title>Discord Server Invite and Boost Prices</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
             margin: 0;
-            background: linear-gradient(to right, #6a11cb, #2575fc);
+            background: url('https://cdn.discordapp.com/attachments/1249280583893254235/1261739046351274004/retouch_2024071319402244.jpg?ex=66955f0e&is=66940d8e&hm=c50d73dba7f39d85cca8182975a33d7f45bbdb7ff73ef31a4f8ca128234e7e56&') no-repeat center center fixed;
+            background-size: cover;
             color: #fff;
-        }
-        header {
             text-align: center;
-            margin-bottom: 20px;
+            padding: 20px;
         }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
+        h1 {
+            color: #fff;
+            margin-bottom: 40px;
         }
         .invite-link {
             margin: 20px 0;
@@ -32,6 +31,7 @@
             background-color: #5865F2;
             padding: 10px 20px;
             border-radius: 5px;
+            border: 2px solid #5865F2;
             transition: background-color 0.3s;
         }
         .invite-link:hover {
@@ -40,31 +40,33 @@
         .prices {
             list-style: none;
             padding: 0;
-            width: 300px;
         }
         .prices li {
             background-color: rgba(255, 255, 255, 0.1);
             border: 1px solid rgba(255, 255, 255, 0.2);
             margin: 10px 0;
             padding: 10px;
+            width: 200px;
             text-align: center;
             border-radius: 5px;
+        }
+        .server-image {
+            max-width: 300px;
+            border-radius: 10px;
+            margin: 20px 0;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Join Our Discord Server!</h1>
-        <a href="https://discord.gg/tFmPAV5FJA" class="invite-link">Join Now</a>
-    </header>
-    <section>
-        <h2>Boost Prices</h2>
-        <ul class="prices">
-            <li>Rank 30: 15 EUR</li>
-            <li>R35: 80 EUR</li>
-            <li>Legendary: 15 EUR</li>
-            <li>Masters: 30 EUR</li>
-        </ul>
-    </section>
+    <h1>Join Our Discord Server!</h1>
+    <a href="https://discord.gg/tFmPAV5FJA" class="invite-link">Join Now</a>
+    <img src="https://cdn.discordapp.com/attachments/1249280583893254235/1261734418750378076/retouch_2024071319212666.jpg?ex=66955abf&is=6694093f&hm=059e1108e572efd85f5a5d08da121a080923dbbe8cd233d4db867d8a11239d0b&" alt="Server Image" class="server-image">
+    <h2>Boost Prices</h2>
+    <ul class="prices">
+        <li>Rank 30: 15 EUR</li>
+        <li>Rank 35: 80 EUR</li>
+        <li>Legendary: 15 EUR</li>
+        <li>Masters: 30 EUR</li>
+    </ul>
 </body>
 </html>
