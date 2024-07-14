@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheap Gems Sale!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        .gems-list {
+            list-style-type: none;
+            padding: 0;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        .gems-list li {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .gems-list li:hover {
+            background-color: #f0f0f0;
+        }
+        .gems-list li .gem-price {
+            font-weight: bold;
+        }
+        .gems-list li .gem-details {
+            font-size: 14px;
+            color: #666;
+        }
+        .select-button {
+            background-color: #5865F2;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .select-button:hover {
+            background-color: #4752c4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cheap Gems Sale!</h1>
+    <p>Don't miss out on these amazing deals! Get your gems now! 🌟</p>
+    
+    <ul class="gems-list">
+        <li>
+            <div class="gem-details">
+                <span>:Gems:</span> 30 + 3 Gems
+            </div>
+            <div class="gem-price">€2</div>
+            <button class="select-button" onclick="selectGem('30 + 3 Gems', '€2')">Select</button>
+        </li>
+        <li>
+            <div class="gem-details">
+                <span>:Gems:</span> 80 + 8 Gems
+            </div>
+            <div class="gem-price">€5</div>
+            <button class="select-button" onclick="selectGem('80 + 8 Gems', '€5')">Select</button>
+        </li>
+        <li>
+            <div class="gem-details">
+                <span>:Gems:</span> 170 + 17 Gems
+            </div>
+            <div class="gem-price">€10</div>
+            <button class="select-button" onclick="selectGem('170 + 17 Gems', '€10')">Select</button>
+        </li>
+        <li>
+            <div class="gem-details">
+                <span>:Gems:</span> 360 + 36 Gems
+            </div>
+            <div class="gem-price">€18</div>
+            <button class="select-button" onclick="selectGem('360 + 36 Gems', '€18')">Select</button>
+        </li>
+        <li>
+            <div class="gem-details">
+                <span>:Gems:</span> 950 + 95 Gems
+            </div>
+            <div class="gem-price">€50</div>
+            <button class="select-button" onclick="selectGem('950 + 95 Gems', '€50')">Select</button>
+        </li>
+        <li>
+            <div class="gem-details">
+                <span>:Gems:</span> 2000 + 200 Gems
+            </div>
+            <div class="gem-price">€100</div>
+            <button class="select-button" onclick="selectGem('2000 + 200 Gems', '€100')">Select</button>
+        </li>
+    </ul>
+
+    <script>
+        function selectGem(gemDetails, price) {
+            alert(`Selected: ${gemDetails} for ${price}`);
+            // Perform further actions here, like redirecting to a payment page or adding to cart
+        }
+    </script>
+</body>
+</html>
+
