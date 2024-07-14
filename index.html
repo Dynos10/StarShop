@@ -13,61 +13,94 @@
             justify-content: center;
             height: 100vh;
             margin: 0;
-            background: url('https://cdn.discordapp.com/attachments/1249280583893254235/1261739046351274004/retouch_2024071319402244.jpg?ex=66955f0e&is=66940d8e&hm=c50d73dba7f39d85cca8182975a33d7f45bbdb7ff73ef31a4f8ca128234e7e56&') no-repeat center center fixed;
-            background-size: cover;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
+            background-color: #f4f4f4;
         }
         h1 {
-            color: #fff;
-            margin-bottom: 40px;
+            color: #333;
         }
         .invite-link {
             margin: 20px 0;
             font-size: 20px;
-            color: #fff;
+            color: #5865F2;
             text-decoration: none;
-            background-color: #5865F2;
+            border: 2px solid #5865F2;
             padding: 10px 20px;
             border-radius: 5px;
-            border: 2px solid #5865F2;
-            transition: background-color 0.3s;
-        }
-        .invite-link:hover {
-            background-color: #4752c4;
         }
         .prices {
             list-style: none;
             padding: 0;
         }
         .prices li {
-            background-color: rgba(0, 0, 0, 0.5); /* Updated to clear black */
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            background-color: #fff;
+            border: 1px solid #ddd;
             margin: 10px 0;
             padding: 10px;
             width: 200px;
             text-align: center;
             border-radius: 5px;
-            color: #fff; /* Text color white */
         }
-        .server-image {
-            max-width: 300px;
-            border-radius: 10px;
-            margin: 20px 0;
+        .cheap-gems-button {
+            margin-top: 20px;
+        }
+        .cheap-gems-button a {
+            background-color: #5865F2;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .cheap-gems-button a:hover {
+            background-color: #4752c4;
         }
     </style>
 </head>
 <body>
     <h1>Join Our Discord Server!</h1>
     <a href="https://discord.gg/tFmPAV5FJA" class="invite-link">Join Now</a>
-    <img src="https://cdn.discordapp.com/attachments/1249280583893254235/1261734418750378076/retouch_2024071319212666.jpg?ex=66955abf&is=6694093f&hm=059e1108e572efd85f5a5d08da121a080923dbbe8cd233d4db867d8a11239d0b&" alt="Server Image" class="server-image">
     <h2>Boost Prices</h2>
     <ul class="prices">
         <li>Rank 30: 15 EUR</li>
-        <li>Rank 35: 80 EUR</li>
+        <li>R35: 80 EUR</li>
         <li>Legendary: 15 EUR</li>
         <li>Masters: 30 EUR</li>
     </ul>
+
+    <div class="cheap-gems-button">
+        <a href="#cheap-gems-section">View Cheap Gems</a>
+    </div>
+
+    <h2 id="cheap-gems-section">Cheap Gems Sale!</h2>
+    <div class="gem-package">
+        <p>:Gems: 30 + 3 Gems</p>
+        <p>€2</p>
+    </div>
+    <div class="gem-package">
+        <p>:Gems: 80 + 8 Gems</p>
+        <p>€5</p>
+    </div>
+    <div class="gem-package">
+        <p>:Gems: 170 + 17 Gems</p>
+        <p>€10</p>
+    </div>
+    <div class="gem-package">
+        <p>:Gems: 360 + 36 Gems</p>
+        <p>€18</p>
+    </div>
+    <div class="gem-package">
+        <p>:Gems: 950 + 95 Gems</p>
+        <p>€50</p>
+    </div>
+    <div class="gem-package">
+        <p>:Gems: 2000 + 200 Gems</p>
+        <p>€100</p>
+    </div>
+
+    <div class="join-discord">
+        <a href="https://discord.gg/tFmPAV5FJA" target="_blank">Join Our Discord Server</a>
+    </div>
 </body>
 </html>
