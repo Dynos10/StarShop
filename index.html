@@ -15,109 +15,52 @@
             margin: 0;
             background: url('https://cdn.discordapp.com/attachments/1249280583893254235/1261739046351274004/retouch_2024071319402244.jpg?ex=66955f0e&is=66940d8e&hm=c50d73dba7f39d85cca8182975a33d7f45bbdb7ff73ef31a4f8ca128234e7e56&') no-repeat center center fixed;
             background-size: cover;
-            background-color: #f4f4f4; /* Fallback color */
-            text-align: center; /* Align text in the center */
-            color: #fff; /* Text color */
+            color: #fff;
+            text-align: center;
+            padding: 20px;
         }
-        h1, h2 {
-            margin-top: 20px; /* Add spacing at the top */
+        h1 {
+            color: #fff;
+            margin-bottom: 40px;
         }
-        .invite-link, .prices li, .gem-package button {
+        .invite-link {
+            margin: 20px 0;
             font-size: 20px;
             color: #fff;
             text-decoration: none;
+            background-color: #5865F2;
             padding: 10px 20px;
             border-radius: 5px;
-            background-color: rgba(0, 0, 0, 0.7); /* Black with slight transparency */
-            border: none;
-            display: inline-block; /* Display as inline block */
-            margin-bottom: 10px; /* Add margin bottom for spacing */
-            transition: background-color 0.3s; /* Smooth transition on hover */
+            border: 2px solid #5865F2;
+            transition: background-color 0.3s;
         }
-        .invite-link:hover, .prices li:hover, .gem-package button:hover {
-            background-color: rgba(0, 0, 0, 0.9); /* Darker on hover */
+        .invite-link:hover {
+            background-color: #4752c4;
         }
         .prices {
             list-style: none;
             padding: 0;
-            color: #333;
         }
         .prices li {
-            background-color: #fff;
-            border: 1px solid #ddd;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             margin: 10px 0;
             padding: 10px;
             width: 200px;
             text-align: center;
             border-radius: 5px;
-            cursor: pointer; /* Make list items clickable */
         }
-        .gem-package {
-            background-color: transparent;
-            border: none;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        .gem-package img {
-            max-width: 100%;
+        .server-image {
+            max-width: 300px;
             border-radius: 10px;
-            margin-bottom: 10px;
-            width: 300px; /* Set maximum width for the image */
-        }
-        .gem-package button {
-            background-color: rgba(0, 0, 0, 0.7); /* Black with slight transparency */
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s;
-            cursor: pointer;
-        }
-        .gem-package button:hover {
-            background-color: rgba(0, 0, 0, 0.9); /* Darker on hover */
-        }
-        .join-discord {
-            margin-top: 20px;
-            margin-bottom: 20px; /* Add margin at the bottom */
-        }
-        .join-discord a {
-            background-color: #5865F2;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s;
-            display: inline-block; /* Ensure it's inline block for proper alignment */
-        }
-        .join-discord a:hover {
-            background-color: #4752c4;
+            margin: 20px 0;
         }
     </style>
 </head>
 <body>
     <h1>Join Our Discord Server!</h1>
     <a href="https://discord.gg/tFmPAV5FJA" class="invite-link">Join Now</a>
-    
-    <div class="gem-package">
-        <img src="https://cdn.discordapp.com/attachments/1249280583893254235/1261734418750378076/retouch_2024071319212666.jpg?ex=66955abf&is=6694093f&hm=059e1108e572efd85f5a5d08da121a080923dbbe8cd233d4db867d8a11239d0b&" alt="Server Image">
-        <h2 id="cheap-gems-section">Cheap Gems Sale!</h2>
-        <button>30 gems = €2</button>
-        <button>80 gems = €5</button>
-        <button>170 gems = €10</button>
-        <button>360 gems = €18</button>
-        <button>950 gems = €50</button>
-        <button>2000 gems = €100</button>
-    </div>
-
-    <div class="join-discord">
-        <a href="https://discord.gg/tFmPAV5FJA" target="_blank">Join Our Discord Server</a>
-    </div>
-
+    <img src="https://cdn.discordapp.com/attachments/1249280583893254235/1261734418750378076/retouch_2024071319212666.jpg?ex=66955abf&is=6694093f&hm=059e1108e572efd85f5a5d08da121a080923dbbe8cd233d4db867d8a11239d0b&" alt="Server Image" class="server-image">
     <h2>Boost Prices</h2>
     <ul class="prices">
         <li>Rank 30: 15 EUR</li>
