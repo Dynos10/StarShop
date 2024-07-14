@@ -22,19 +22,23 @@
         h1, h2 {
             margin-top: 20px; /* Add spacing at the top */
         }
-        .invite-link {
-            margin: 20px 0;
+        .invite-link, .gem-package {
+            margin: 10px 0; /* Adjust margin for both links and gem packages */
+        }
+        .invite-link, .prices li, .gem-package button {
             font-size: 20px;
-            color: #5865F2;
+            color: #fff;
             text-decoration: none;
-            border: 2px solid #5865F2;
             padding: 10px 20px;
             border-radius: 5px;
-            background-color: rgba(0, 0, 0, 0.5);
-            transition: background-color 0.3s;
+            background-color: rgba(0, 0, 0, 0.7); /* Black with slight transparency */
+            border: none;
+            display: inline-block; /* Display as inline block */
+            margin-bottom: 10px; /* Add margin bottom for spacing */
+            transition: background-color 0.3s; /* Smooth transition on hover */
         }
-        .invite-link:hover {
-            background-color: rgba(0, 0, 0, 0.7);
+        .invite-link:hover, .prices li:hover, .gem-package button:hover {
+            background-color: rgba(0, 0, 0, 0.9); /* Darker on hover */
         }
         .prices {
             list-style: none;
@@ -51,20 +55,29 @@
             border-radius: 5px;
         }
         .gem-package {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            margin: 10px 0;
-            padding: 10px;
-            width: 200px;
-            text-align: center;
-            border-radius: 5px;
-            display: inline-block; /* Display gems packages side by side */
-            vertical-align: top; /* Align packages to the top */
+            background-color: transparent;
+            border: none;
+            margin: 0;
+            padding: 0;
         }
         .gem-package img {
             max-width: 100%;
             border-radius: 10px;
             margin-bottom: 10px;
+        }
+        .gem-package button {
+            background-color: rgba(0, 0, 0, 0.7); /* Black with slight transparency */
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+        .gem-package button:hover {
+            background-color: rgba(0, 0, 0, 0.9); /* Darker on hover */
         }
         .join-discord {
             margin-top: 20px;
@@ -79,6 +92,7 @@
             border-radius: 5px;
             text-decoration: none;
             transition: background-color 0.3s;
+            display: inline-block; /* Ensure it's inline block for proper alignment */
         }
         .join-discord a:hover {
             background-color: #4752c4;
@@ -91,7 +105,7 @@
     <h2>Boost Prices</h2>
     <ul class="prices">
         <li>Rank 30: 15 EUR</li>
-        <li>Rank 35: 80 EUR</li>
+        <li>R35: 80 EUR</li>
         <li>Legendary: 15 EUR</li>
         <li>Masters: 30 EUR</li>
     </ul>
@@ -99,12 +113,12 @@
     <div class="gem-package">
         <img src="https://cdn.discordapp.com/attachments/1249280583893254235/1261734418750378076/retouch_2024071319212666.jpg?ex=66955abf&is=6694093f&hm=059e1108e572efd85f5a5d08da121a080923dbbe8cd233d4db867d8a11239d0b&" alt="Server Image">
         <h2 id="cheap-gems-section">Cheap Gems Sale!</h2>
-        <p>30 gems = €2</p>
-        <p>80 gems = €5</p>
-        <p>170 gems = €10</p>
-        <p>360 gems = €18</p>
-        <p>950 gems = €50</p>
-        <p>2000 gems = €100</p>
+        <button>30 gems = €2</button>
+        <button>80 gems = €5</button>
+        <button>170 gems = €10</button>
+        <button>360 gems = €18</button>
+        <button>950 gems = €50</button>
+        <button>2000 gems = €100</button>
     </div>
 
     <div class="join-discord">
