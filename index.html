@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discord Server Invite and Boost Prices</title>
+    <title>Discord Server Invite and Prices</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -37,6 +37,9 @@
         }
         .button.boosts {
             top: 60px;
+        }
+        .button.hidden {
+            display: none;
         }
         h1 {
             color: #fff;
@@ -75,94 +78,60 @@
             border-radius: 10px;
             margin: 20px 0;
         }
-    </style>
-</head>
-<body>
-    <a href="gems.html" class="button">Cheap Gems</a>
-    <a href="#" class="button boosts">Boost Prices</a>
-    <h1>Join Our Discord Server!</h1>
-    <a href="https://discord.gg/tFmPAV5FJA" class="invite-link">Join Now</a>
-    <img src="https://cdn.discordapp.com/attachments/1249280583893254235/1261734418750378076/retouch_2024071319212666.jpg?ex=66955abf&is=6694093f&hm=059e1108e572efd85f5a5d08da121a080923dbbe8cd233d4db867d8a11239d0b&" alt="Server Image" class="server-image">
-    <h2>Boost Prices</h2>
-    <ul class="prices">
-        <li>Rank 30: 15 EUR</li>
-        <li>Rank 35: 80 EUR</li>
-        <li>Legendary: 15 EUR</li>
-        <li>Masters: 30 EUR</li>
-    </ul>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cheap Gems Sale!</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 20px;
-        }
-        .gem-package {
-            background-color: #f0f0f0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 10px;
-            margin: 10px;
-            display: inline-block;
-        }
-        .join-discord {
-            margin-top: 20px;
-        }
-        .join-discord a {
-            background-color: #5865F2;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s;
-        }
-        .join-discord a:hover {
-            background-color: #4752c4;
+        .hidden-content {
+            display: none;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
-    <h1>Cheap Gems Sale!</h1>
-    <p>✨ Matcherino Pin: €5:Matcherino:</p>
+    <a href="#" class="button" id="show-gems-button">Cheap Gems</a>
+    <a href="#" class="button boosts hidden" id="show-boosts-button">Boost Prices</a>
+    <div id="main-content">
+        <h1>Join Our Discord Server!</h1>
+        <a href="https://discord.gg/tFmPAV5FJA" class="invite-link">Join Now</a>
+        <img src="https://cdn.discordapp.com/attachments/1249280583893254235/1261734418750378076/retouch_2024071319212666.jpg?ex=66955abf&is=6694093f&hm=059e1108e572efd85f5a5d08da121a080923dbbe8cd233d4db867d8a11239d0b&" alt="Server Image" class="server-image">
+        <h2>Boost Prices</h2>
+        <ul class="prices">
+            <li>Rank 30: 15 EUR</li>
+            <li>R35: 80 EUR</li>
+            <li>Legendary: 15 EUR</li>
+            <li>Masters: 30 EUR</li>
+        </ul>
+    </div>
+    <div id="gems-content" class="hidden-content">
+        <h1>✨ Cheap Gems Sale! ✨</h1>
+        <p>Matcherino Pin: €5:Matcherino:</p>
+        <h3>Gem Prices:</h3>
+        <ul class="prices">
+            <li>Gems 30 + 3 Gems: €2</li>
+            <li>Gems 80 + 8 Gems: €5</li>
+            <li>Gems 170 + 17 Gems: €10</li>
+            <li>Gems 360 + 36 Gems: €18</li>
+            <li>Gems 950 + 95 Gems: €50</li>
+            <li>Gems 2000 + 200 Gems: €100</li>
+        </ul>
+        <h3>🔥 Special Offers 🔥</h3>
+        <ul class="prices">
+            <li>Cheap Gems Method: €50</li>
+            <li>Brawl Pass+: €10</li>
+        </ul>
+        <p>Don't miss out on these amazing deals! Get your gems now! 🌟</p>
+    </div>
+    <script>
+        document.getElementById('show-gems-button').addEventListener('click', function() {
+            document.getElementById('main-content').style.display = 'none';
+            document.getElementById('gems-content').style.display = 'block';
+            document.getElementById('show-gems-button').classList.add('hidden');
+            document.getElementById('show-boosts-button').classList.remove('hidden');
+        });
 
-    <h2>Gem Prices:</h2>
-    <div class="gem-package">
-        <p>:Gems: 30 + 3 Gems</p>
-        <p>€2</p>
-    </div>
-    <div class="gem-package">
-        <p>:Gems: 80 + 8 Gems</p>
-        <p>€5</p>
-    </div>
-    <div class="gem-package">
-        <p>:Gems: 170 + 17 Gems</p>
-        <p>€10</p>
-    </div>
-    <div class="gem-package">
-        <p>:Gems: 360 + 36 Gems</p>
-        <p>€18</p>
-    </div>
-    <div class="gem-package">
-        <p>:Gems: 950 + 95 Gems</p>
-        <p>€50</p>
-    </div>
-    <div class="gem-package">
-        <p>:Gems: 2000 + 200 Gems</p>
-        <p>€100</p>
-    </div>
-
-    <div class="join-discord">
-        <a href="https://discord.gg/tFmPAV5FJA" target="_blank">Join Our Discord Server</a>
-    </div>
+        document.getElementById('show-boosts-button').addEventListener('click', function() {
+            document.getElementById('gems-content').style.display = 'none';
+            document.getElementById('main-content').style.display = 'block';
+            document.getElementById('show-boosts-button').classList.add('hidden');
+            document.getElementById('show-gems-button').classList.remove('hidden');
+        });
+    </script>
 </body>
 </html>
