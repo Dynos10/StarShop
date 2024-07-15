@@ -79,7 +79,7 @@
         .server-image {
             max-width: 300px;
             border-radius: 10px;
-            margin: 40px 0 20px; /* Add margin at the top to move the image lower */
+            margin: 20px 0; /* Margin around the image */
         }
         .hidden-content {
             display: none;
@@ -87,6 +87,13 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+        #main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 100px; /* Adjust padding to move the content lower */
         }
     </style>
 </head>
@@ -141,3 +148,4 @@
     </script>
 </body>
 </html>
+
