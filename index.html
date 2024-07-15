@@ -19,9 +19,26 @@
             text-align: center;
             padding: 20px;
         }
+        .home-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 16px;
+            color: #fff;
+            text-decoration: none;
+            background-color: #5865F2;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: 2px solid #5865F2;
+            transition: background-color 0.3s;
+        }
+        .home-button:hover {
+            background-color: #4752c4;
+        }
         h1 {
             color: #fff;
-            margin-bottom: 40px;
+            margin-top: 60px; /* Adjusted margin to push the title lower */
+            margin-bottom: 20px; /* Adjusted margin for better spacing */
         }
         .invite-link {
             margin: 20px 0;
@@ -58,6 +75,7 @@
     </style>
 </head>
 <body>
+    <a href="#" class="home-button">Home</a>
     <h1>Join Our Discord Server!</h1>
     <a href="https://discord.gg/tFmPAV5FJA" class="invite-link">Join Now</a>
     <img src="https://cdn.discordapp.com/attachments/1249280583893254235/1261734418750378076/retouch_2024071319212666.jpg?ex=66955abf&is=6694093f&hm=059e1108e572efd85f5a5d08da121a080923dbbe8cd233d4db867d8a11239d0b&" alt="Server Image" class="server-image">
