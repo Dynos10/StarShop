@@ -102,6 +102,17 @@
             padding-top: 150px; /* Adjust padding to move the content lower */
             box-sizing: border-box;
         }
+        .footer {
+            position: absolute;
+            bottom: 10px;
+            left: 20px;
+            font-size: 14px;
+            color: #fff;
+            text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000; /* Black outline */
+        }
+        .footer:hover::after {
+            content: ' (dyn0ss)';
+        }
     </style>
 </head>
 <body>
@@ -118,6 +129,7 @@
             <li>Legendary: 15 EUR</li>
             <li>Masters: 30 EUR</li>
         </ul>
+        <div class="footer">Made by Dynos</div>
     </div>
     <div id="gems-content" class="hidden-content">
         <h1>✨ Cheap Gems Sale! ✨</h1>
