@@ -109,10 +109,16 @@
             font-size: 14px;
             color: #fff;
             text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000; /* Black outline */
+            cursor: pointer; /* Change cursor to pointer on hover */
             transition: color 0.3s; /* Add transition for smooth hover effect */
         }
+        .footer:hover {
+            color: transparent; /* Hide the text on hover */
+        }
         .footer:hover::after {
-            content: ' (dyn0ss)';
+            content: 'Discord: dyn0ss'; /* Display this content on hover */
+            color: #fff; /* Change the color of the new content */
+            text-shadow: none; /* Remove text shadow from new content */
         }
     </style>
 </head>
@@ -130,7 +136,7 @@
             <li>Legendary: 15 EUR</li>
             <li>Masters: 30 EUR</li>
         </ul>
-        <div class="footer" id="footer">Discord: dyn0ss</div>
+        <div class="footer">Made by Dynos</div>
     </div>
     <div id="gems-content" class="hidden-content">
         <h1>✨ Cheap Gems Sale! ✨</h1>
@@ -153,20 +159,5 @@
         </ul>
         <p>Don't miss out on these amazing deals! Get your gems now! 🌟</p>
     </div>
-    <script>
-        document.getElementById('show-gems-button').addEventListener('click', function() {
-            document.getElementById('main-content').style.display = 'none';
-            document.getElementById('gems-content').style.display = 'flex';
-            document.getElementById('show-gems-button').classList.add('hidden');
-            document.getElementById('show-boosts-button').classList.remove('hidden');
-        });
-
-        document.getElementById('show-boosts-button').addEventListener('click', function() {
-            document.getElementById('gems-content').style.display = 'none';
-            document.getElementById('main-content').style.display = 'flex';
-            document.getElementById('show-boosts-button').classList.add('hidden');
-            document.getElementById('show-gems-button').classList.remove('hidden');
-        });
-    </script>
 </body>
 </html>
