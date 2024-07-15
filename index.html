@@ -18,6 +18,7 @@
             color: #fff;
             text-align: center;
             padding: 20px;
+            box-sizing: border-box;
         }
         .button {
             position: absolute;
@@ -78,6 +79,7 @@
         }
         .server-image {
             max-width: 300px;
+            max-height: 300px; /* Ensure the image fits within the viewport */
             border-radius: 10px;
             margin: 20px 0; /* Margin around the image */
         }
@@ -93,7 +95,9 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding-top: 100px; /* Adjust padding to move the content lower */
+            height: 100%; /* Use the full height of the viewport */
+            padding-top: 20px; /* Adjust padding to move the content lower */
+            box-sizing: border-box;
         }
     </style>
 </head>
@@ -148,4 +152,3 @@
     </script>
 </body>
 </html>
-
