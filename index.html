@@ -10,7 +10,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: flex-start; /* Changed from center to flex-start */
+            justify-content: flex-start;
             height: 100vh;
             margin: 0;
             background: url('https://cdn.discordapp.com/attachments/1249280583893254235/1261739046351274004/retouch_2024071319402244.jpg?ex=66955f0e&is=66940d8e&hm=c50d73dba7f39d85cca8182975a33d7f45bbdb7ff73ef31a4f8ca128234e7e56&') no-repeat center center fixed;
@@ -70,7 +70,7 @@
             margin: 0;
             display: flex;
             flex-direction: column;
-            align-items: center; /* Center align the list */
+            align-items: center;
         }
         .prices li {
             background-color: rgba(0, 0, 0, 0.7); /* Black tint */
@@ -109,6 +109,7 @@
             font-size: 14px;
             color: #fff;
             text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000; /* Black outline */
+            transition: color 0.3s; /* Add transition for smooth hover effect */
         }
         .footer:hover::after {
             content: ' (dyn0ss)';
@@ -129,7 +130,7 @@
             <li>Legendary: 15 EUR</li>
             <li>Masters: 30 EUR</li>
         </ul>
-        <div class="footer">Made by Dynos</div>
+        <div class="footer" id="footer">Discord: dyn0ss</div>
     </div>
     <div id="gems-content" class="hidden-content">
         <h1>✨ Cheap Gems Sale! ✨</h1>
