@@ -41,10 +41,9 @@
         .button.hidden {
             display: none;
         }
-        h1 {
+        h1, h2, h3 {
             color: #fff;
-            margin-top: 60px;
-            margin-bottom: 20px;
+            margin: 20px 0;
         }
         .invite-link {
             margin: 20px 0;
@@ -63,6 +62,7 @@
         .prices {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
         .prices li {
             background-color: rgba(255, 255, 255, 0.1);
@@ -80,7 +80,10 @@
         }
         .hidden-content {
             display: none;
-            margin-top: 40px;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     </style>
 </head>
@@ -94,14 +97,14 @@
         <h2>Boost Prices</h2>
         <ul class="prices">
             <li>Rank 30: 15 EUR</li>
-            <li>R35: 80 EUR</li>
+            <li>Rank 35: 80 EUR</li>
             <li>Legendary: 15 EUR</li>
             <li>Masters: 30 EUR</li>
         </ul>
     </div>
     <div id="gems-content" class="hidden-content">
         <h1>✨ Cheap Gems Sale! ✨</h1>
-        <p>Matcherino Pin: €5:Matcherino:</p>
+        <p>Matcherino Pin: €5</p>
         <h3>Gem Prices:</h3>
         <ul class="prices">
             <li>Gems 30 + 3 Gems: €2</li>
@@ -121,37 +124,14 @@
     <script>
         document.getElementById('show-gems-button').addEventListener('click', function() {
             document.getElementById('main-content').style.display = 'none';
-            document.getElementById('gems-content').style.display = 'block';
+            document.getElementById('gems-content').style.display = 'flex';
             document.getElementById('show-gems-button').classList.add('hidden');
             document.getElementById('show-boosts-button').classList.remove('hidden');
         });
 
         document.getElementById('show-boosts-button').addEventListener('click', function() {
             document.getElementById('gems-content').style.display = 'none';
-            document.getElementById('main-content').style.display = 'block';
-            document.getElementById('show-boosts-button').classList.add('hidden');
-            document.getElementById('show-gems-button').classList.remove('hidden');
-        });
-    </script>
-</body>
-</html>
-
-                <li>Brawl Pass+: €10</li>
-            </ul>
-            <p>Don't miss out on these amazing deals! Get your gems now! 🌟</p>
-        </div>
-    </div>
-    <script>
-        document.getElementById('show-gems-button').addEventListener('click', function() {
-            document.getElementById('main-content').style.display = 'none';
-            document.getElementById('gems-content').style.display = 'block';
-            document.getElementById('show-gems-button').classList.add('hidden');
-            document.getElementById('show-boosts-button').classList.remove('hidden');
-        });
-
-        document.getElementById('show-boosts-button').addEventListener('click', function() {
-            document.getElementById('gems-content').style.display = 'none';
-            document.getElementById('main-content').style.display = 'block';
+            document.getElementById('main-content').style.display = 'flex';
             document.getElementById('show-boosts-button').classList.add('hidden');
             document.getElementById('show-gems-button').classList.remove('hidden');
         });
